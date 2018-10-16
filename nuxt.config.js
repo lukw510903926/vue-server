@@ -20,10 +20,8 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: ['./plugins/element-ui.js', './plugins/util-plugins.js'],
   build: {
-    /*
-    ** Run ESLint on save
-    */
     extend(config, {isDev, isClient}) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -35,12 +33,16 @@ module.exports = {
       }
     }
   },
-  loaders: [
-    {
-      test: /\.(css)$/,
-      loader: 'style-loader!css-loader'
+  modules: ['@nuxtjs/axios', '@nuxtjs/proxy'],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'http://127.0.0.1:8050',
+      changeOrigin: true,
+      pathRewrite: {'^/api': ''}
     }
-  ],
-  plugins: ['./plugins/element-ui.js']
+  }
 };
 
