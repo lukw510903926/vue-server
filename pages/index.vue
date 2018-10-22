@@ -39,7 +39,7 @@
     data() {
       return {
         asideStyle: {
-          minHeight: 100 + 'vh'
+          minHeight: 'calc(100vh - 60px)'
         }
       };
     },
