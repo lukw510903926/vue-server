@@ -1,4 +1,12 @@
+import list from './plugins/list'
+
 module.exports = {
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push(...list(resolve))
+    }
+  },
   /*
   ** Headers of the page
   */

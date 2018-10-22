@@ -45,7 +45,7 @@
       };
     },
     mounted() {
-      this.$http.getRequest("/user/list").then(response =>console.log('data:',response));
+      //this.$http.getRequest("/user/list").then(response =>console.log('data:',response));
     },
     created() {
     }
