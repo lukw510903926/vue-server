@@ -20,7 +20,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['./plugins/element-ui.js', './plugins/util-plugins.js'],
+  plugins: ['./plugins/element-ui.js', './plugins/util-plugins.js', './plugins/route.js'],
   build: {
     extend(config, {isDev, isClient}) {
       if (isDev && isClient) {
