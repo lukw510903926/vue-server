@@ -1,5 +1,5 @@
 <template>
-  <el-menu :default-active="$route.path" background-color="#001529" text-color="#fff" active-text-color="#ffd04b"
+  <el-menu :default-active="$route.path" unique-opened background-color="#001529" text-color="#fff" active-text-color="#ffd04b"
            :router=true>
     <el-submenu index="autoRoute">
       <template slot="title">
