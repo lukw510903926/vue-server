@@ -1,6 +1,5 @@
 <template>
-  <el-menu :default-active="$route.path" unique-opened background-color="#001529" text-color="#fff" active-text-color="#ffd04b"
-           :router=true>
+  <el-menu :default-active="$route.path" unique-opened background-color="#001529" text-color="#fff" active-text-color="#ffd04b" router>
     <el-submenu index="autoRoute">
       <template slot="title">
         <span>自动路由</span>
