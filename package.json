@@ -16,6 +16,12 @@
     "element-ui": "^2.4.8",
     "nuxt": "^2.0.0"
   },
+  "config":{
+    "nuxt":{
+      "host":"127.0.0.1",
+      "port":"1818"
+    }
+  },
   "devDependencies": {
     "@nuxtjs/axios": "^5.3.3",
     "@nuxtjs/proxy": "^1.2.4",
