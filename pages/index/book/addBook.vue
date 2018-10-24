@@ -11,6 +11,14 @@
     meta: {
       theme: 'dark'
     },
+    head() {
+      return {
+        title: '添加书籍',
+        meta: [
+          {hid: Math.random(), name: '添加书籍', content: '添加书籍 ---- My custom description'}
+        ]
+      }
+    },
     data() {
       return {}
     },
