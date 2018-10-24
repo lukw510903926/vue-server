@@ -1,9 +1,9 @@
 const list = (resolve) => {
-  return [
-    {
+  return [{
       path: '/home',
       name: 'home',
       meta:{title:'首页'},
+      redirect: "/home/addBook",
       component: resolve(__dirname, '../pages/index.vue'),
       children: [{
         path: 'bookList',

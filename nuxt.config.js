@@ -3,6 +3,7 @@ import list from './plugins/list'
 module.exports = {
 
   router: {
+    middleware: ['auth'],
     extendRoutes(routes, resolve) {
       routes.push(...list(resolve))
     }
